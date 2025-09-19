@@ -13,7 +13,9 @@
     $stmt->bindParam(':quantidade', $quantidade);
     
     if ($stmt->execute()) {
+        echo '<div class="alert alert" style="background-color:#f8d7da; color:#721c24; border:1px solid #f5c6cb; border-radius:5px;">';
         echo "Produto inserido com sucesso!";
+        echo '</div>';
     } else {
         echo "Erro ao inserir produto.";
     }
